@@ -51,7 +51,7 @@ const VisualPortfolio = () => {
     }
 
     return (
-        <section className="py-16 bg-gray-100">
+        <section className="py-16">
             <div className="container mx-auto">
                 {/* Numbered Title */}
                 <div className="flex items-center mb-6">
