@@ -13,7 +13,7 @@ const BodyInfo = () => {
         { title: 'Eyes', value: 'Black' },
       ];
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-gray-100">
       <div className="container mx-auto">
         {/* Numbered Title */}
         <div className="flex items-center mb-6">
