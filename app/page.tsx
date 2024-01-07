@@ -4,7 +4,7 @@ import VisualPortfolio from './components/visualportfolio';
 import BodyInfo from './components/body';
 import ContactMeSection from './components/reachout';
 
-export default function Home() {
+const Home = () => {
  return (
   <div className="overflow-hidden" >
    <Hero />
@@ -15,3 +15,5 @@ export default function Home() {
   </div>
  );
 }
+
+export default Home;
