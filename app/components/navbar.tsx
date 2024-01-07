@@ -5,48 +5,48 @@ import Image from 'next/image';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const [isDrawerOpen, setDrawerOpen] = useState(false);
-  const toggleDrawer = () => setDrawerOpen(!isDrawerOpen);
-  return (
-    <nav className="flex items-center justify-between p-4 bg-transparent">
-      <div className="flex items-center">
-      <button type="button" className="text-white text-2xl cursor-pointer" onClick={toggleDrawer}>
-        <Image src="/menu1.png" alt="menu" width={150} height={150} className="w-6 h-6" />
+ const [isDrawerOpen, setDrawerOpen] = useState(false);
+ const toggleDrawer = () => setDrawerOpen(!isDrawerOpen);
+ return (
+  <nav className="flex items-center justify-between p-4 bg-transparent">
+   <div className="flex items-center">
+    <button type="button" className="text-white text-2xl cursor-pointer" onClick={toggleDrawer}>
+     <Image src="/menu1.png" alt="menu" width={150} height={150} className="w-6 h-6" />
+    </button>
+   </div>
+   {isDrawerOpen && (
+    <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
+     <div className="flex justify-end p-4">
+      <button className="text-white text-2xl" onClick={toggleDrawer}>
+       <span className="block">×</span>
       </button>
-      </div>
-      {isDrawerOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
-          <div className="flex justify-end p-4">
-            <button className="text-white text-2xl" onClick={toggleDrawer}>
-              <span className="block">×</span>
-            </button>
-          </div>
-          <div className="flex flex-col items-center text-white text-xl font-bold">
-            <Link to="/" className="my-2" onClick={toggleDrawer}>Home</Link>
-            <Link to="/my-life-story" className="my-2" onClick={toggleDrawer}>My Life Story</Link>
-            <Link to="/visual-portfolio" className="my-2" onClick={toggleDrawer}>Visual Portfolio</Link>
-            <Link to="/model-body-info" className="my-2" onClick={toggleDrawer}>Body</Link>
-            <Link to="/contact-me" className="my-2" onClick={toggleDrawer}>Contact Me</Link>
-          </div>
-        </div>
-      )}
+     </div>
+     <div className="flex flex-col items-center text-white text-xl font-bold">
+      <Link to="/" className="my-2" onClick={toggleDrawer}>Home</Link>
+      <Link to="/my-life-story" className="my-2" onClick={toggleDrawer}>My Life Story</Link>
+      <Link to="/visual-portfolio" className="my-2" onClick={toggleDrawer}>Visual Portfolio</Link>
+      <Link to="/model-body-info" className="my-2" onClick={toggleDrawer}>Body</Link>
+      <Link to="/contact-me" className="my-2" onClick={toggleDrawer}>Contact Me</Link>
+     </div>
+    </div>
+   )}
 
-      {/* Middle Section - Model's Name */}
-      <div className="text-white text-xl font-bold">
+   {/* Middle Section - Model's Name */}
+   <div className="text-white text-xl font-bold">
         nessah_handas
-      </div>
+   </div>
 
-      {/* Right Section - Hi Button with Waving Hand Icon */}
-      <div className="flex items-center">
-        <button className="text-white mr-2">
+   {/* Right Section - Hi Button with Waving Hand Icon */}
+   <div className="flex items-center">
+    <button className="text-white mr-2">
           Hi
-          <span role="img" aria-label="Waving Hand" className="ml-1">
+     <span role="img" aria-label="Waving Hand" className="ml-1">
             👋
-          </span>
-        </button>
-      </div>
-    </nav>
-  );
+     </span>
+    </button>
+   </div>
+  </nav>
+ );
 };
 
 export default Navbar;
