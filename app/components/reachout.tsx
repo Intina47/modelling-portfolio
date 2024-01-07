@@ -1,7 +1,9 @@
 // components/ContactMeSection.tsx
+'use client';
 import React from 'react';
 import Image from 'next/image';
-import { Link } from 'react-router-dom';
+// import ReachOutBtn from "./reachoutbtn"
+import Link from 'next/link';
 
 const ContactMeSection = () => {
   const modelInfo = {
@@ -50,12 +52,11 @@ const ContactMeSection = () => {
             <p className="text-lg font-bold">Email Address</p>
             <p>{contactDetails.emailAddress}</p>
           </div>
-
-          {/* Reach Out Button */}
           <button className="bg-black text-white py-2 px-4 hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue">
-          {/* <Link to="/contact-me">Reach Out</Link> */}
-          Reach Out
-          </button>
+          <Link href="/contact-me">
+    <div>Reach Out</div>
+  </Link>
+        </button>
         </div>
       </div>
     </section>
