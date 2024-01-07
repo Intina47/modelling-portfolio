@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const MyLifeStory = () => {
  return (
-  <section className="py-16 ">
+  <section className="py-16 " id="my-life-story">
    <div className="container mx-auto flex flex-col items-center">
     {/* Numbered Title */}
     <div className="flex items-center mb-6">
