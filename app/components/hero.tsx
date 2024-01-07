@@ -5,7 +5,7 @@ import Navbar from './navbar';
 const Hero = () => {
  return (
   <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: 'url("/hero.jpg")' }}>
-   {/* Transparent Navbar */}
+   {/* Navbar */}
    <div className="relative top-0 left-0 right-0 bg-transparent z-50">
     <Navbar/>
    </div>
