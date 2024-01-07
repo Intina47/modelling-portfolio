@@ -74,7 +74,7 @@ const VisualPortfolio = () => {
     {/* Show More Button */}
     {visibleItems < portfolioItems.length && (
      <div className="flex justify-center mt-8">
-      <button onClick={showMoreItems} className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded">
+      <button onClick={showMoreItems} className="bg-black hover:bg-pink-600 hover:text-black text-white font-bold py-2 px-4">
                                 Show More
       </button>
      </div>
