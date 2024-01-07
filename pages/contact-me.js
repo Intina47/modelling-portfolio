@@ -5,7 +5,7 @@ import '../app/globals.css';
 const ContactMe = () => {
  return (
   <div>
-   <Navbar />
+     <Navbar />
    <ContactMePage />
   </div>
  );
