@@ -6,8 +6,8 @@ const ContactMePage = () => {
   <div className="container mx-auto mt-10">
    {/* contact form */}
    <form className="w-full max-w-lg mx-auto">
-    <div className="flex flex-wrap -mx-3 mb-6">
-     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+    <div className="flex flex-wrap -mx-3 mb-6 mx-auto">
+     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0 mx-auto">
       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
        htmlFor="grid-first-name">
                             First Name
@@ -17,7 +17,7 @@ const ContactMePage = () => {
        id="grid-first-name" type="text" placeholder="Jane"/>
       <p className="text-gray-600 text-xs italic">Please fill out this field.</p>
      </div>
-     <div className="w-full md:w-1/2 px-3">
+     <div className="w-full md:w-1/2 px-3 mx-auto">
       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
        htmlFor="grid-last-name">
                             Last Name
@@ -40,7 +40,31 @@ const ContactMePage = () => {
      </div>
     </div>
     {/* message */}
+    {/* Message */}
+<div className="flex flex-wrap -mx-3 mb-6 mx-auto">
+  <div className="w-full px-3">
+    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="message">
+      Message
+    </label>
+    <textarea
+      className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+      id="message" placeholder="Your message here..."
+    />
+    <p className="text-gray-600 text-xs italic">Please fill out this field.</p>
+  </div>
+</div>
 
+{/* Submit Button */}
+<div className="flex flex-wrap -mx-3 mb-6 mx-auto">
+  <div className="w-full px-3 text-center">
+    <button
+      className="bg-black text-white py-2 px-4 hover:bg-pink-600 hover:text-black focus:outline-none focus:shadow-outline-blue"
+      type="submit"
+    >
+      Send Message
+    </button>
+  </div>
+</div>
    </form>
   </div>
  );
