@@ -4,8 +4,8 @@ import ContactMePage from '../app/components/ContactMePage';
 import '../app/globals.css';
 const ContactMe = () => {
  return (
-  <div>
-     <Navbar />
+  <div className='bg-black h-screen w-full'>
+   <Navbar />
    <ContactMePage />
   </div>
  );
