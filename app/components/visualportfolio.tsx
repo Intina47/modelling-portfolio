@@ -1,48 +1,11 @@
 'use client';
 import React, {useState} from 'react';
 import Image from 'next/image';
+import {portfolioItems} from '../constants/index'
 
 const VisualPortfolio = () => {
  const initilVisibleItems = 6;
  const [visibleItems, setVisibleItems] = useState(initilVisibleItems);
- const portfolioItems = [
-  {
-   image: '/visual1.jpg',
-   description: 'Iconic runway walk at Paris Fashion Week.'
-  },
-  {
-   image: '/visual2.jpg',
-   description: 'Vogue photoshoot showcasing elegance.'
-  },
-  {
-   image: '/visual3.jpg',
-   description: 'Collaboration with renowned fashion designer.'
-  },
-  {
-   image: '/visual4.jpg',
-   description: 'Balenciaga walk at New York Fashion Week.'
-  },
-  {
-   image: '/visual5.jpg',
-   description: 'Vogue photoshoot showcasing elegance.'
-  },
-  {
-   image: '/visual6.jpg',
-   description: 'Iconic runway walk at Paris Fashion Week.'
-  },
-  {
-   image: '/visual7.jpg',
-   description: 'Iconic runway walk at Paris Fashion Week.'
-  },
-  {
-   image: '/visual8.jpg',
-   description: 'Iconic runway walk at Paris Fashion Week.'
-  },
-  {
-   image: '/visual9.jpg',
-   description: 'Iconic runway walk at Paris Fashion Week.'
-  },
- ];
 
  const showMoreItems = () => {
   setVisibleItems(visibleItems + 3);
@@ -51,16 +14,14 @@ const VisualPortfolio = () => {
  return (
   <section className="py-16" id="VisualPortfolio">
    <div className="container mx-auto">
-    {/* Numbered Title */}
+    {/* Title */}
     <div className="flex items-center mb-6">
      <span className="text-2xl font-bold text-gray-500 mr-4">02</span>
      <h2 className="text-3xl font-bold">Visual Portfolio</h2>
     </div>
 
-    {/* Portfolio Items */}
-    {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> */}
+    {/*Items */}
     <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
-     {/* {portfolioItems.map((item, index) => ( */}
      {portfolioItems.slice(0, visibleItems).map((item, index) => (
       <div key={index} className="relative  overflow-hidden">
        <Image src={item.image} alt={`Portfolio ${index + 1}`} width={400} height={600} className="w-full h-full object-cover" />
