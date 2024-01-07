@@ -52,7 +52,7 @@ const ContactMeSection = () => {
       <p className="text-lg font-bold">Email Address</p>
       <p>{contactDetails.emailAddress}</p>
      </div>
-     <button className="bg-black text-white py-2 px-4 hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue">
+     <button className="bg-black text-white py-2 px-4 hover:bg-pink-600 hover:text-black focus:outline-none focus:shadow-outline-blue">
       <Link href="/contact-me">
        <div>Reach Out</div>
       </Link>
