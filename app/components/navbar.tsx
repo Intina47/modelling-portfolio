@@ -2,7 +2,7 @@
 'use client';
 import React, {useState} from 'react';
 import Image from 'next/image';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const Navbar = () => {
  const [isDrawerOpen, setDrawerOpen] = useState(false);
@@ -22,28 +22,32 @@ const Navbar = () => {
       </button>
      </div>
      <div className="flex flex-col items-center text-white text-xl font-bold">
-      <Link to="/" className="my-2" onClick={toggleDrawer}>Home</Link>
-      <Link to="/my-life-story" className="my-2" onClick={toggleDrawer}>My Life Story</Link>
-      <Link to="/visual-portfolio" className="my-2" onClick={toggleDrawer}>Visual Portfolio</Link>
-      <Link to="/model-body-info" className="my-2" onClick={toggleDrawer}>Body</Link>
-      <Link to="/contact-me" className="my-2" onClick={toggleDrawer}>Contact Me</Link>
+      <Link href="/" className="my-2" onClick={toggleDrawer}>Home</Link>
+      <Link href="/my-life-story" className="my-2" onClick={toggleDrawer}>My Life Story</Link>
+      <Link href="/visual-portfolio" className="my-2" onClick={toggleDrawer}>Visual Portfolio</Link>
+      <Link href="/model-body-info" className="my-2" onClick={toggleDrawer}>Body</Link>
+      <Link href="/contact-me" className="my-2" onClick={toggleDrawer}>Contact Me</Link>
      </div>
     </div>
    )}
 
    {/* Middle Section - Model's Name */}
    <div className="text-white text-xl font-bold">
-        nessah_handas
+        <Link href="/">
+       <div>nessah_handas</div>
+      </Link>
    </div>
 
    {/* Right Section - Hi Button with Waving Hand Icon */}
    <div className="flex items-center">
+   <Link href="/contact-me" className='hover:bg-pink-600 rounded-lg p-1'>
     <button className="text-white mr-2">
           Hi
      <span role="img" aria-label="Waving Hand" className="ml-1">
             👋
      </span>
     </button>
+    </Link>
    </div>
   </nav>
  );
