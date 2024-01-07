@@ -1,3 +1,4 @@
+import React from 'react';
 import Hero from './components/hero';
 import MyLifeStory from './components/MyLifeStory';
 import VisualPortfolio from './components/visualportfolio';
@@ -14,6 +15,6 @@ const Home = () => {
    <ContactMeSection />
   </div>
  );
-}
+};
 
 export default Home;
