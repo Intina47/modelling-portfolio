@@ -1,4 +1,3 @@
-// 'use client';
 import React from 'react';
 
 const ContactMePage = () => {
@@ -40,7 +39,6 @@ const ContactMePage = () => {
      </div>
     </div>
     {/* message */}
-    {/* Message */}
     <div className="flex flex-wrap -mx-3 mb-6 mx-auto">
      <div className="w-full px-3">
       <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" htmlFor="message">
