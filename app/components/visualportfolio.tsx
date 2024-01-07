@@ -49,7 +49,7 @@ const VisualPortfolio = () => {
  };
 
  return (
-  <section className="py-16">
+  <section className="py-16" id="VisualPortfolio">
    <div className="container mx-auto">
     {/* Numbered Title */}
     <div className="flex items-center mb-6">
@@ -75,7 +75,7 @@ const VisualPortfolio = () => {
     {visibleItems < portfolioItems.length && (
      <div className="flex justify-center mt-8">
       <button onClick={showMoreItems} className="bg-black hover:bg-pink-600 hover:text-black text-white font-bold py-2 px-4">
-                                Show More
+         Show More
       </button>
      </div>
     )}
