@@ -1,6 +1,6 @@
 'use client';
 import React, {useState} from 'react';
-import Image from 'next/image'; // Import the 'Image' component from the appropriate package
+import Image from 'next/image';
 
 const VisualPortfolio = () => {
  const initilVisibleItems = 6;
