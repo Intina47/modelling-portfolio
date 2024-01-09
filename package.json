@@ -14,7 +14,7 @@
     "@typescript-eslint/eslint-plugin": "^6.18.0",
     "@typescript-eslint/parser": "^6.18.0",
     "eslint-plugin-react": "^7.33.2",
-    "next": "14.0.4",
+    "next": "^14.0.5-canary.42",
     "react": "^18",
     "react-dom": "^18",
     "react-router-dom": "^6.21.1"
