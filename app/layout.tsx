@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
  title: 'nessah_handas',
- description: 'Hi 👋 I am Bossette, a model based in nairobi, Kenya.',
+ description: 'Hi 👋 I am Bossette, a model based in Nairobi, Kenya.',
 };
 
 export default function RootLayout({
