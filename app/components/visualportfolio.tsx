@@ -17,7 +17,7 @@ const VisualPortfolio = () => {
     {/* Title */}
     <div className="flex items-center mb-6">
      <span className="text-2xl font-bold text-gray-500 mr-4">02</span>
-     <h2 className="text-3xl font-bold">Visual Portfolio</h2>
+     <h2 className="text-3xl font-bold text-pink-500">Visual Portfolio</h2>
     </div>
 
     {/*Items */}
@@ -35,7 +35,7 @@ const VisualPortfolio = () => {
     {/* Show More Button */}
     {visibleItems < portfolioItems.length && (
      <div className="flex justify-center mt-8">
-      <button onClick={showMoreItems} className="bg-black hover:bg-pink-600 hover:text-black text-white font-bold py-2 px-4">
+      <button onClick={showMoreItems} className="bg-black hover:bg-pink-600 hover:text-black text-white font-bold py-2 px-4 outline outline-offset-2 outline-1 focus:shadow-outline-blue">
          Show More
       </button>
      </div>
