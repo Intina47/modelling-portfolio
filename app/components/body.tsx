@@ -1,5 +1,5 @@
 import React from 'react';
-import {bodyInfoItems} from '../constants'
+import {bodyInfoItems} from '../constants';
 
 const BodyInfo = () => {
  return (
