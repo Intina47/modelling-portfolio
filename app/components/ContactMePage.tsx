@@ -54,7 +54,7 @@ const ContactMePage = () => {
     setSent(false);
     console.log('sorry an error occured');
     alert(
-     `Sorry an error occured, please try again later or reach out to me via my email.\n${process.env.EMAIL}`
+     'Sorry am still under development, please try again later or reach out to developer via my email.\nisaiahntina47@gmail.com'
     );
    }
   } catch (error) {
@@ -62,7 +62,7 @@ const ContactMePage = () => {
    setSent(false);
    console.log(error);
    alert(
-    `Sorry an error occured, please try again later or reach out to me via my email.\n${process.env.EMAIL}`
+    'Sorry am still under development, please try again later or reach out to developer via my email.\nisaiahntina47@gmail.com'
    );
   }
  };
