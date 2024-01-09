@@ -1,7 +1,7 @@
 'use client';
 import React, {useState} from 'react';
 import Image from 'next/image';
-import {portfolioItems} from '../constants/index'
+import {portfolioItems} from '../constants/index';
 
 const VisualPortfolio = () => {
  const initilVisibleItems = 6;
