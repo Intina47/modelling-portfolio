@@ -3,9 +3,5 @@
 @tailwind utilities;
 
 body {
-  /* set background color to #FAF2E9 */
-    /* background-color: #FAF2E9;
-     */
-    background-color: black;
-    
+ background-color: black;
 }
