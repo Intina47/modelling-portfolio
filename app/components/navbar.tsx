@@ -27,6 +27,7 @@ const Navbar = () => {
       <Link href="/#VisualPortfolio" className="my-2 hover:text-pink-500 mx-10 " onClick={toggleDrawer}><span className="mr-2 text-pink-500 text-3xl font-bold-900 oldstyle-nums">02.</span>Visual Portfolio</Link>
       <Link href="/#measurements-info" className="my-2 hover:text-pink-500 mx-10 " onClick={toggleDrawer}><span className="mr-2 text-pink-500 text-3xl font-bold oldstyle-nums">03.</span>Body Specs</Link>
       <Link href="/contact-me" className="my-2 hover:text-pink-500 mx-10" onClick={toggleDrawer}><span className="mr-2 text-pink-500 font-bold text-3xl oldstyle-nums">04.</span>Contact Me</Link>
+      <Link href="/blogComponent" className="my-2 hover:text-pink-500 mx-10" onClick={toggleDrawer}><span className="mr-2 text-pink-500 font-bold text-3xl oldstyle-nums">05.</span>Blog</Link>
      </div>
     </div>
    )}
